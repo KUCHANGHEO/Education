@@ -1,0 +1,195 @@
+오늘 오후 CNN openCV
+
+딥러닝에 대한 모든것을 이번주에 끝낸다
+
+그걸 바탕으로 과제 1인 프로젝트
+
+파이썬을 가지고 달력 만들기
+
+그것도 끝나면 앨범 만들기
+
+다음주 월요일 부터 인디언 당뇨병 판별 과제
+
+
+29일 부터 기업 멘토링 프로젝트 6주간
+
+
+보고서 작성
+
+전체 진척율
+
+업무 단계
+
+수업 들은것 정리
+
+  작업
+    함수1: 내용
+    함수2: 내용
+    ....
+
+복습
+
+기타사항
+
+
+넘파이를 이용한 캘린더 만들기
+
+주피터 노트북으로 실행을해서 결과물을 내도록
+
+
+soft max는 다중분류
+
+0부터 9까지 들어오면 다중분류  yes or no 는 sigmoid
+
+
+
+객체를 만들면 객체에 뭐가 들어갔는지 한번씩 보기
+
+학원에서 배우는것 이외에 스스로 학습할수있는것이 중요 학습할수 있는 사이트를 알려주겠다
+
+
+기억하려고 노력하지마라 스스로 기억이 되게있겠끔 반복학습 한다
+
+구글에서 계속 찾으면 알아서 기억하게 된다 자꾸자꾸 찾아봐라
+
+
+데이터는 캐글에 있다
+
+
+발표는 회사가서 하는 주간업무보고를 연습하는것
+
+발표 말하기 전에 미리 말할 시나리오를 그려놔야 한다 버벅거리거나 말을 못하면 
+
+
+크롤링
+
+데이터 불러오기
+
+전처리
+
+정규화
+
+모델 생성
+
+모델 컴파일
+
+모델 학습
+
+모델 predit
+
+모델 저장
+
+matplotlib을 이용하여 데이터 시각화
+
+
+
+
+오후
+
+
+import test_package.module_a as a
+
+import test_package.module_b as b
+
+test_package(하위 디렉토리) 폴더 아래 module.py 파일들을 읽어 온다
+
+
+module_a 안에 if __name__ == "__main__":
+                       add(30,70)
+
+은 module_a 를 실행할때는 실행이 되지만
+
+main에서 import 로 가져올때는 실행이 안된다
+
+
+from test_package import *
+
+test_package 폴더 하위의 모든 파일을 임포트 한다
+
+안돼는 이유 -> __init__ 파일이 없어서
+
+__init__ 파일 안
+__all__ = ["module_a", "module_b"] 로 모듈을 읽는다
+
+
+머신러닝 > 딥 러닝 > 신경망 > GAN
+
+1. 통계학(regression) = Classical Linear regression
+	- Linear Regression(연속적인 숫자를 예측)
+	- Logistic Regression(이진 분류를 하기 위해)
+	- 여러개를 모으면 Multinominal(다중분류)
+
+2. artificial Neural network(ANN) - logistic regression 기본으로 복잡한 네트워크 구조를 이용 -> 딥러닝
+
+3. SVM(support vector Machine)
+   Naive Bays
+   Decision Tree , Random Forest
+   KNN(K-Nearest Neighbor)		=> 정형 데이터에 대하여 학습하고 예측
+   
+
+Deep Neural Network(DNN) : input layer 와 output layer 사이에 하나이상의 hidden layer가 존재
+
+Input Dataset > X(data) , Y(label)
+
+Model Box > input layer, output layer-> 예측(확률)이 나옴
+
+예측(확률) < 비교 > 정답
+            차이발생
+            (Loss)
+
+Weight, Bias Update 를 정답이 나올때 까지 반복
+
+layer 안에 node는 다음 레이어의 node에 W,b 를 가져간다 -> Dense
+
+output layer 에서 예측값을 넘겨주는데
+
+넘겨준 확률의 합은 1이다
+
+
+Image 학습 어떻게 하면 더 잘 할수 있을까 ?
+
+BIg Data -> 비정형 데이터 포함(vision) OpenCV
+
+각 객체의 특징들을 추출해서 예측 -> CNN (Convolutional Neural Networks)
+
+CNN: Image의 특징을 추출해서 그 특징을 학습하고 예측
+
+CNN은 어떻게 구성이 되어 있을까 ( CNN Architecture )
+
+Convolution : 합성곱
+
+
+X , Y
+
+Model Box를 Feature Extraction(특성 추출) 과 Classification(분류) 로 나눈다
+
+나눈 구간 마다
+
+input Layer 와 output Layer 그리고 그사이에 hidden Layer가 있다
+
+Feature Extraction
+
+hidden Layer 안에는 Convolution Node -> 와 Activation Node(Relu)가 있다
+
+앞 Layer의 Activation Node 에서 다음 Layer의 Convolution Node에 들어간다
+
+마지막 hidden Layer는 pooling Layer 에서 output Layer 에서
+Classification Input Layer로 넘어감
+ 해당 부분에선 DNN 처럼 w,b 값을 넘김
+
+예측과 정답을 비교한후 Update W, b 를 feedback해준다
+
+model box에 대하여 복습
+
+
+convolution, pooling
+
+내일은 CNN을 이용해서 이미지 처리
+
+활성함수가 어떻게 동작하는가
+
+convolution pooling 이 뭔지
+
+CNN 은 3차원 배열로 들어온다
+
+스스로 아쉬웠던점 적기

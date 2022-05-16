@@ -1,0 +1,107 @@
+오전 발표
+
+변수
+
+협업 하기 편하게
+
+
+클래스
+
+속성과 상속
+
+
+제일 간단한 input output 쓰는 ANN
+
+
+그다음 스텝 DNN 배운다
+
+케라스 손글씨 데이터
+
+
+CNN 역전파
+
+
+
+추가할 기능 볼륨 조절
+
+
+이질감을 없에기 위해서
+
+같은 데이터에서 train, test를 나누고 섞는다
+
+validation 6:2:2
+
+
+발표
+
+팀원 있는 팀명
+
+배운내용 후 제목
+
+
+발표할 내용 다 쓰기
+
+복습 내용에 주신 내용 보기
+
+
+오후
+
+데이터 정규화 
+
+모델에 데이터는 2차원으로 들어간다
+
+28*28 =  784 colomn
+
+모델의 집어넣기 위해 
+
+배열을 2차원 배열로 바꿔주는것이 tf.keras.layers.Flatten(input_shape = (28,28) )
+
+
+모델 저장하기 model.save('model2.h5')
+
+ANN
+
+
+
+이렇게 기존에 만들어놓은 모델에
+
+추가로 개인이 가져와서 학습시키는것은 전이 학습
+
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
+
+scaler = MinMaxScaler()
+scaler.fit(X_train)
+X_train_s = transform(X_train)
+
+
+모델 박스에는 input Layer 와 output Layer가 있다
+
+input 에서 output으로 나올때까지
+
+데이터는 weight와 bias 를 가지고 움직인다
+
+나온 확률과 정답을 차이 비교하고
+
+다시 weight 와 bias를 바꾸기 전에 loss함수가 작동한다
+
+
+evaluate(X_test, y_test)
+
+
+
+내일 할꺼
+
+모델 튜닝
+
+데이터를 개와 고양이로 바꾸기
+
+파일에서 필요한 만큼만 불러들여서 학습하는 방법
+
+loss와 accuracy 비교하는 그래프 그리기
+
+openCV
+
+
+
+
+UI : 
