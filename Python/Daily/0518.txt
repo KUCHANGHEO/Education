@@ -1,0 +1,43 @@
+CNN feedback은 역전파(미분)을 이용한다
+
+활성화 함수의 중요성
+
+CNN은 Feature Extraction과 Classification으로 나뉜다
+
+Feature Extraction부분을 다른사람이 해둔걸 가져오는 전이 학습을 해본다
+
+
+# 전이학습에 대하야 알아봅시다
+# 비학습된 Pretrained Network VGG16을 이용해 보는것
+
+from tensorflow.keras.applications import VGG16
+
+
+model = Sequential()
+
+model_base = VGG16(weights='imagenet',
+                   include_top=False,
+                   input_shape = (150,150,3))
+
+model.add(model_base)
+
+# Classification 하는 부분은 우리가 구현해야 합니다
+# FC Layer(DNN)의 Input Layer
+
+model.add(Flatten())
+
+# output layer
+model.add(Dense(units=1,
+               activation='sigmoid'))
+
+
+
+오후는 openCV 
+
+line, rectangle, circle, ellipse
+
+image read, write
+
+camera read, write
+
+
