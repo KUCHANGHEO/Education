@@ -192,10 +192,17 @@
 
 - 머신러닝과 신경망
 - 로지스틱 회귀는 선형회귀에 시그모이드 함수를 적용한 것
-- $$ sigmoid(x) = \frac {1} {1 + e^{-x}} $$
+$$ sigmoid(x) = \frac {1} {1 + e^{-x}} $$
+- 로지스틱 회귀 실습
 
 ### 26일차 강의 요약
 
+- 로지스틱 회귀( LogisticRegression )
+    - 유방암 데이터를 이용하여 로지스틱 회귀 실습
+    - mglearn을 이용하여 시각화
+- 신경망
+- sigmoid 사용자 함수 정의
+- 랜덤으로 w, b값을 설정후 pred값 계산
 
 ### 27일차 강의 요약
 
@@ -217,7 +224,37 @@
 
 ### 29일차 강의 요약
 
+- 신경망
+- 소프트맥스를 이용해 확률값으로 변환
+  * 소프트맥스 : 입력받은 값을 0~1 사이의 값으로 모두 정규화, 출력 값들의 총합은 항상 1이 되는 특성을 가진 함수
+- tensorflow
+- tf.constant : 상수, 값 변경 불가능
+- tf.Variable : 변수, 값 변경 가능(모델 훈련 시 미분 연산 중간 결과 저장에 변수 사용)
+assign으로 값을 변경 : x.assign_add(), x.assign_sub()를 사용해 덧셈, 뺄셈 연산을 수행한 후 변수의 값을 업데이트
+- 기울기 계산(미분)
+- 활성화함수 sigmoid
+
 ### 30일차 강의 요약
+
+* 행복 데이터셋
+np.random.permutation(range(149)) # 무작위로 섞인 배열 생성
+X1, X2, X3로 나누고
+X1 = (X1 - X1.mean(axis=0)) / X1.std(axis=0)  # 표준화
+tf.nn.relu([-3,-2,-1,0,1,2,3])   # 활성화 함수는 relu 사용
+
+* MNIST 데이터셋
+(X_train, y_train), (X_test, y_test) = keras.datasets.mnist.load_data()
+- 가중치 초기화
+W = tf.Variable(np.random.normal(0, 0.1, size=[784,10]))
+- 모델 설정
+model = keras.models.Sequential()
+model.add(keras.layers.Dense(10, input_shape=(784,), activation='softmax'))
+- 컴파일
+model.compile(loss='categorical_crossentropy', optimizer='sgd', metrics=['acc'])
+                                        * sgd : 경사하강법
+- 모델 학습
+model.fit(X_train, y_onehot, batch_size=100, epochs=100, validation_split=0.2)
+- 시각화
 
 ### 31일차 강의 요약
 
