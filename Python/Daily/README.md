@@ -114,10 +114,20 @@
 ### 17일차 강의 요약
 
 - 머신러닝
+- 선형회귀(LinearRegression)
+    - world_happiness_report_2021 데이터 사용
+    - Weight, bias 값을 저장후 선형 그리기
+    - plt.scatter()를 통해 산점도, 그래프 그리기
+    - np.exp로 지수함수 적용한 그래프 그리기
+    - predict한 값을 Mean Squared Error 적용
+    - MSE로 w, b값을 update하는것을 반복
+    - epoch를 반복할수록 error값이 떨어지는것을 확인
 
 ### 18일차 강의 요약
 
 - 머신러닝
+- 17일차와 마찬가지로 world_happiness_report_2021 데이터에 가중치를 변화 시켜 error값을 변화시킴
+- 선형회귀 경사하강법 공식 적용
 
 ### 19일차 강의 요약
 
