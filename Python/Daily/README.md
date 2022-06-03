@@ -2,6 +2,8 @@
 
 ## 01일차 강의 요약
 
+- 파이썬 
+
 ## 02일차 강의 요약
 
 ## 03일차 강의 요약
@@ -65,12 +67,3 @@
 ## 01 신경망 강의 요약
 
 ## 02 신경망 강의 요약
-
-
-- daily
-- basic
-- numpy
-- pandas
-- DataAnalysis
-- machine_Learning
-- openCV
