@@ -1,17 +1,35 @@
-# Education
+# Python 기초
+- python01.ipynb 파일
 
-## Java
+## 자료형
 
-## R
+- 프로그램의 기본이자 핵심 단위
 
-## Sql
+### 숫자형
+- Number
+- 숫자형에는 정수형과 실수형이 있다
 
-## Python
+#### 정수형
 
-- daily
-- basic
-- numpy
-- pandas
-- DataAnalysis
-- machine_Learning
-- openCV
+- integer, int
+
+#### 실수형
+
+- Floating Number, float
+
+### 문자열
+
+- 한글자: character문자열
+- 두글자: string 문자열
+- 홑따옴표와 쌍따옴표
+- Escape Character
+    - \n 문자열안에서 줄을 바꿀 때 사용
+    - \t 문자열 사이에 탭 간격을 줄 때 사용
+    - \\ 문자\를 그대로 표현할 때 사용
+    - \' 작은따옴표'를 그대로 표현할 때 사용
+    - \" 큰따옴표"를 그대로 표현할 때 사용
+    - \r 캐리지 리턴(줄 바꿈 문자, 현재 커서를 가장 앞으로 이동)
+    - \f 폼 피드(줄 바꿈 문자, 현재 커서를 다음 줄로 이동)
+    - \a 벨 소리(출력할 때 PC 스피커에서 '삑'소리가 난다)
+    - \b 백스페이스
+    - \000 널문자
