@@ -46,7 +46,20 @@
 - StringEqulsExample 문자열 비교
 - ArrayCreateByValueListExample 값 목록으로 배열 생성
 - ArrayCreateByValueListExample2 값의 리스트로 배열 생성
-- ArrayCreateByNewExample
-- 
+- ArrayCreateByNewExample new 연산자로 배열 생성
+- MainStringArrayArgument main() 메소드의 매개 변수
+- ArrayInArrayExample 배열 속의 배열
+- ArrayCopyByForExample for문으로 배열 복사
+- ArrayCopyExample System.arraycopy()로 배열 복사
+- AdvancedForExaple 향상된 for문
+- week 열거 타입 선언
+- EnumWeekExample 열거 타입과 열거 상수
 
 ## chap06
+
+- Student 클래스 선언
+- StudentExample 클래스로부터 객체 생성
+- Car Car 클래스 필드 선언
+- CarExample 외부 클래스에서 Car 핅드값 읽기와 변경
+- Calculator 메소드 선언
+- CalculatorExample 메소드 호출
