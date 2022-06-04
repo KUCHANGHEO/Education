@@ -1,17 +1,14 @@
-# Education
+# DATA BASE
 
-## Java
+## SYSTEM.sql
 
-## R
+- DDL
+- DCL
 
-## Sql
+## SCOTT.sql
 
-## Python
+- DML
 
-- daily
-- basic
-- numpy
-- pandas
-- DataAnalysis
-- machine_Learning
-- openCV
+## MADANG.sql
+
+- 연습용
