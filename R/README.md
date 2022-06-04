@@ -473,3 +473,66 @@ n(df_exam$math) # 빈도
 - join() 열 합치기
 - bind_row() 행 합치기
 
+
+## 6.데이터 전처리(preprocessing)
+
+- 결측치 지우기
+- 처리방법 1 데이터를 지워버린다
+- 처리방법 2 다른 값으로 채워넣는다
+    - 다른 값: 평균, 최빈 값, 직전 값, 직후 값
+
+- 처리방법 3 무시한다
+- 이상치
+- 상자 그림 통계치 출력
+
+## 7.ggplot
+
+- ggplot(data=데이터 셋명): 데이터를 불러오는 역활
+- mpping=aes(x=,y=): x출,y축 설정
+- geom_function(): 어떤 그래프를 그릴지 설정
+- positon(x,y),color(색상),fill(채우기),shape(모양)
+- linetype(선 형태),size(크기) 등
+
+- 산점도
+- geom_point() + xlim() + ylim()
+
+- bar 그래프는 변수가 x 한개여야함
+- color는 테두리
+- fill은 채우기
+- position("dodge")는 중첩된 그래프를 분리해서 보여줌
+- shape는 모양을 바꾼다
+- smooth 추가 (음영추가)
+- theme 추가
+- lab을 이용하여 제목,범례 수정
+- geom_col()은 원소가 하나인 bar와 다르게 두개가 있어야함
+- boxplot은 상자 형태로 그린다
+- dotplot은 동그란 점으로 그린다
+- violin
+
+### ONE VARIABLE continuous
+
+- density
+- area
+- dotplot
+- freqpoly
+- histogram
+
+### facet:그래프 분할
+
+- facet_grid()
+- facet_wrap() 행또는 열이 많아지면 wrap
+
+### 그래프
+
+- jitter 많이 겹쳐있는 정도를 보여주는 명령어
+- line
+- bar 응용
+- bar 응용
+
+## 워드 클라우드
+
+- 파일 읽기
+- 파일속 단어 나누기
+- unlist화 시킨후 한자릿수 단어 지우기
+- table로 저장하고 sort로 정렬하기
+- ordCloud로 표현
