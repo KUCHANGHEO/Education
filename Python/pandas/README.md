@@ -1,17 +1,11 @@
-# Education
+# Pandas
 
-## Java
-
-## R
-
-## Sql
-
-## Python
-
-- daily
-- basic
-- numpy
-- pandas
-- DataAnalysis
-- machine_Learning
-- openCV
+- 통합 인덱싱을 활용한 데이터 조작을 가능하게 하는 데이터프레임(DataFrame) 오브젝트
+- 인메모리(in-memory) 데이터 구조와 다양한 파일 포맷들 간의 데이터 읽기/쓰기 환경 지원
+- 데이터 결측치의 정렬 및 처리
+- 데이터셋의 재구조화 및 피보팅(pivoting)
+- 레이블 기반의 슬라이싱, 잘 지원된 인덱싱, 대용량 데이터셋에 대한 서브셋 지원
+- 데이터 구조의 칼럼 추가 및 삭제
+- 데이터셋의 분할-적용-병합을 통한 GroupBy 엔진 지원
+- 데이터셋 병합(merging) 및 조인(joining) 지원
+- 저차원 데이터에서의 고차원 데이터 처리를 위한 계층적 축 인덱싱 지원
