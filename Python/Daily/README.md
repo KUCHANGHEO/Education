@@ -170,7 +170,11 @@
     - SVC의 옵션을 사용하여 튜닝
     > C: 각포인트의 중요도를 제한하는 매개변수
   
+<<<<<<< HEAD
     > gamma: 하나의 훈련 샘플이 미치는 영향의 범위를 결정하는 매개변수
+=======
+    > gamma: 하나의 훈련 샘플이 미치는 영향의 범위를 결정하는 매개 변수
+>>>>>>> origin/KUCHANGHEO-patch-1
 
 ### 22일차 강의 요약
 
@@ -179,7 +183,11 @@
     - SVM 모델 사용
     - np.corrcoef를 사용하여 피어슨 상관계수 값 계산
     - 분류 알고리즘
+<<<<<<< HEAD
     > KNN, SVM, Decision Tree 등등
+=======
+    > KNN, SVM, Decision Tree
+>>>>>>> origin/KUCHANGHEO-patch-1
     - 모델 시각화를 위하여 graphviz 설치
 
 ### 23일차 강의 요약
